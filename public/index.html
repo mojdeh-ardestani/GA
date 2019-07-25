@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie App</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <style>
+        #container {
+            height: 100%;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        #search {
+            margin-top: 30px;
+        }
+
+        #details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px black dotted
+        }
+
+        #favorites {
+            display: none;
+            margin-top: 30px;
+        }
+
+        #searchbar {
+            float: right;
+        }
+
+        /* #results {
+            padding: 0px;
+            border: dotted 1px black;
+            min-height: 40px;
+            overflow: hidden;
+        } */
+
+        ul {
+            padding: 0px;
+            border: dotted 1px black;
+            min-height: 40px;
+            overflow: hidden;
+        }
+
+        .line {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .favorite {
+            background-color: rgb(103, 255, 103);
+        }
+
+        .unfavorite {
+            background-color: rgb(255, 147, 147);
+        }
+
+        li {
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            list-style: none;
+            cursor: pointer;
+        }
+
+        li:nth-child(odd) {
+            background: gainsboro;
+        }
+
+        li:hover {
+            background-color: yellow;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1 style="text-align: center">Movie App</h1>
+        <button id="favoritesBtn">Favorites</button>
+        <div id="searchbar"><input id="search-query" type="search" /> <button id="searchBtn">Search</button></div>
+
+        <div id="search">
+            <h3>Results (click on a listing to see more details)</h3>
+            <ul id="results">
+                <p style="text-align: center">Use the search bar to search for movies!</p>
+            </ul>
+        </div>
+
+        <div id="details">
+        </div>
+
+        <div id="favorites">
+            <h3>Favorite Movies</h3>
+            <ul id="favorites-list">
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
