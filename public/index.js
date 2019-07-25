@@ -1,7 +1,7 @@
 $(document).ready(function ()
 {
   
-    const endpointURI = "http://165.22.237.15:3000";
+    const endpointURI = "http://165.22.229.193:3000";
 
     // when this button is clicked, query our server to query for a list of movies
     // with the value of our search-query input
